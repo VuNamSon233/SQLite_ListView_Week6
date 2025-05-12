@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/appIconIV"
+        app:srcCompat="@drawable/ic_student_male"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_student_male" />
+
+    <TextView
+        android:id="@+id/student_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@id/appIconIV"
+        android:layout_toRightOf="@id/appIconIV"
+        android:maxLines="1"
+        android:text="TÊN SINH VIÊN"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/student_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/student_name"
+        android:layout_alignStart="@id/student_name"
+        android:layout_alignLeft="@id/student_name"
+        android:layout_alignParentTop="false"
+        android:maxLines="1"
+        android:text="MSSV"
+        android:textSize="14sp" />
+
+</RelativeLayout>
